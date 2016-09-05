@@ -6,11 +6,17 @@
 	background-color: black;
 }
 
+#content{
+	margin: 0 auto;
+}
+
+
 .nav{
 	background-color:blue
 	border: 2px solid white;
 	width:100px;
 	height:50px;
+	margin: 0 auto;
 }
 
 #buttons{
@@ -25,9 +31,72 @@
 	vertical-align: top;
 }
 
+#info{
+	text-align: center;
+}
+
 #left, #right{
 	display: inline-block;
 	vertical-align: top;
 	color:white;
-	padding: 20px
+	position:relative;
+	width:500px;
+	height:700px;
 }
+
+#left{
+	background-color: orange;
+	animation: myframesleft 2s ease-in 2s forwards 2;
+}
+
+
+#right{
+	background-color: red;
+	animation: myframesright 2s ease-in 2s forwards 2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes myframesleft{
+	0%{
+		height:700px;
+		width:500px;
+
+	}
+	100%{
+		width:0px;
+		opacity:0;
+		display:none;
+		color:orange;
+	}
+}
+
+@keyframes myframesright{
+	0%{
+		height:700px;
+		width:500px;
+
+	}
+	100%{
+		width:0px;
+		opacity:0;
+		display:none;
+		color:red;
+	}
+}
+
